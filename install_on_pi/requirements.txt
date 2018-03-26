@@ -1,9 +1,5 @@
-PyYAML==3.11
-argh==0.25.0
 argparse==1.2.1
-distribute==0.6.24
-pathtools==0.1.2
+psycopg2>=2.7
 requests==1.2.3
 simplejson==3.6.5
 watchdog==0.8.1
-wsgiref==0.1.2

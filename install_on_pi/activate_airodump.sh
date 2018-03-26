@@ -1,7 +1,7 @@
 #!/bin/bash
 
 WIFIMON=wlan1
-if [! -z "$1" ]; then
+if [ ! -z "$1" ]; then
     WIFIMON=$1
 fi
 
@@ -9,4 +9,4 @@ fi
 sudo airmon-ng start $WIFIMON 
 
 # activate airodump and have it output data to /tmp directory
-sudo airodump-ng --output-format csv --write /tmp/capture ${WIFIMON}mon
+screen -d -m sudo airodump-ng --output-format csv --write /tmp/capture ${WIFIMON}mon
